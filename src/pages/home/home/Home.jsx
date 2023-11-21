@@ -1,3 +1,4 @@
+import Seo from "../../../shared-components/seo/Seo";
 import Banner from "../banner/Banner";
 import Categories from "../categories/Categories";
 import Featured from "../featured/Featured";
@@ -7,6 +8,7 @@ import Testimonials from "../testimonials/Testimonials";
 const Home = () => {
     return (
         <div>
+            <Seo titleText="Home"/>
            <Banner/>
            <Categories/>
            <PopularItems/>
