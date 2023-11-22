@@ -1,6 +1,6 @@
 
 const MenuItem = ({itemData}) => {
-    console.log(itemData);
+    // console.log(itemData);
     const {image, name, price, recipe} = itemData;
     return (
         <div className="flex gap-2">

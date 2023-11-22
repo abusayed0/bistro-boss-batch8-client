@@ -3,6 +3,10 @@ import Main from "../layouts/main/Main";
 import Home from "../pages/home/home/Home";
 import Menu from "../pages/menu/menu/Menu";
 import Order from "../pages/order/order/Order";
+import Login from "../pages/login/Login";
+import SignUp from "../pages/sign-up/SignUp";
+import Secret from "../shared-components/secret/Secret";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +25,18 @@ const router = createBrowserRouter([
                 path: "/order/:category",
                 element: <Order/>
             },
+            {
+                path: "/login",
+                element: <Login/>
+            },
+            {
+                path: "/signup",
+                element: <SignUp/>
+            },
+            {
+                path: "/secret",
+                element: <PrivateRoute><Secret/></PrivateRoute>
+            }
         ]
     }
 ]);
