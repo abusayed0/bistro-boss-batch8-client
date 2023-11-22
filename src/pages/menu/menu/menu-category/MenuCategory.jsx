@@ -13,7 +13,7 @@ const MenuCategory = ({ items, title, coverImg }) => {
                     items.map(item => <MenuItem key={item._id} itemData={item} />)
                 }
             </div>
-            <button onClick={() => navigate(`/order/${title}`)} className="btn btn-outline border-0 border-b-4">Order Now</button>
+            <button onClick={() => navigate(`/order/${title? title: "salads"}`)} className="btn btn-outline border-0 border-b-4">Order Now</button>
 
         </div>
     );
